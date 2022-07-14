@@ -1,0 +1,23 @@
+1- Function Declaration : A function is declared using function keyword and name of the function is required.
+                          No need of assignment operator
+   Function Expression : A function is declared using function keyword and name of the function is also required.
+                          We use assignment operator to create a function.
+
+2-  const function_name =()=>{
+    //body
+}       
+
+3- function function_name(a, b){
+    return a+b;
+}
+
+4- const function_name = function(a, b){
+    return a*b;
+}
+
+5- const function_name = (a,b)=>{
+    return a-b;
+}
+
+6-  const func = ((str) => str.split("").reverse().join(""))("naga")
+    console.log(func); //prints 'agan'
