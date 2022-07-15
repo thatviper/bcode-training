@@ -1,0 +1,20 @@
+--GUESS THE OUTPUT--
+
+1-  12
+    IIFE function is within the scope of 'var a';
+
+2-  12 
+    since 'var a' is reassigned in IIFE as '12'; it becomes accessible as '12' within IIFE only and accessible as '5' out of IIFE.
+
+3-  12
+    because 'var a' is still within IIFE and it is accessible as '12' in function which is returned by IIFE.
+
+4-  10
+    because 'var y' function's scope has reassigned value of 'var a' as '12' and since var is function scoped. it is accessible as '12' only in 'var y' function
+
+5-  12
+    because the nested IIFE is not reassigning the 'var a', but it is changing the global 'var a'.
+
+6-  15
+    'var a' is re assigned in IIFE so it is accessed as '15' in IIFE and '10' outside of it.
+    'window' is just an object

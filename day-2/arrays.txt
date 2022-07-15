@@ -1,0 +1,42 @@
+1-  Array is always passed as reference to a function.
+    const arr = [1,2,3,4,5]
+    const changeArr = (newArr)=>{
+        newArr.push(6);
+    }
+    changeArr(arr);
+    console.log(arr); //OP: [1,2,3,4,5,6]
+
+2-  Using spread operator or slice
+    arr = [1,2,3,4,5]
+    newArr = [...arr] 
+    newArr = arr.slice(0, arr.length)
+
+3-  -> shift()
+    pops the 0th index if the Array and returns the popped element
+    arr = [1,2,3,4,5]
+    arr.shift() // returns 1
+    console.log(arr) //OP: [2,3,4,5]
+    
+    -> unshift()
+    method adds one or more elements to the beginning of an array and returns the new length of the array
+    arr = [1,2,3,4,5]
+    arr.unshift(0) // returns 6
+    console.log(arr) //OP: [0,1,2,3,4,5]
+
+    -> slice()
+    slice() method returns a shallow copy of a portion of an array into a new array object selected from start to end (end not included)
+    arr = [1,2,3,4,5]
+    console.log(arr.slice(1,3)) //OP: [2,3]
+
+    -> splice()
+    splice() method changes the contents of an array by removing or replacing existing elements and/or adding new elements
+    const months = ['Jan', 'March', 'April', 'June'];
+    months.splice(1, 0, 'Feb');
+    console.log(months) //OP: ["Jan", "Feb", "March", "April", "June"]
+    syntax : splice(start, deleteCount, item1, item2, itemN)
+
+    -> pop()
+    pops the last element and returns it and deletes it from the array
+    const arr = [1,2,3,4,5]
+    arr.pop() //returns 5
+    console.log(arr) //OP: [1,2,3,4]

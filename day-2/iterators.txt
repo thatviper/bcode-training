@@ -1,0 +1,15 @@
+1-  arr = [2,4,6,8,10]
+    const squares = arr.map(ele => ele*ele);
+    console.log(squares) //OP: [4, 16, 36, 64, 100]
+
+2-  arr = [1, "two", 3, "four", 5, "Six", 7, "Eight", 9, "Ten"]
+    const strings = arr.filter(ele => typeof(ele) === 'string');
+    console.log(strings) //OP: ['two', 'four', 'Six', 'Eight', 'Ten']
+
+3-  .reduce() has 2 parameters where 1st param is a callback function and 2nd is the initial value of the first arguement of callback function 
+    in simple terms callback function has 2 parameters (accumulator, currentValue). So the 2nd arguement of .reduce() function is the initial value of accumulator when the .reduce() function is first called.
+
+    const arr = [1, 3, 5, 7, 9]
+    const totalSum = arr.reduce((accumulator, currValue) => accumulator + currValue); 
+    console.log(totalSum) //OP: 25
+    
