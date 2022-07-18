@@ -22,5 +22,5 @@ class Queue{
 }
 
 2-  instanceOf operator returns a boolean value which lets us know if a particular object
-    is created by a contructor. The contructor can be a Parent's Contructor as well, just because super() is while using inheritance.
+    is created by a contructor. The contructor can be a Parent's Contructor as well, just because super() is executed in child constructor while using          inheritance.
     SYNTAX => OBJECT instanceOf CONSTRUCTOR
