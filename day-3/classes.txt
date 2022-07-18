@@ -1,0 +1,26 @@
+1-  
+
+class Queue{
+    constructor(){
+        this.q = []
+    }
+    enqueue(element){
+        this.q.push(element)
+    }
+    dequeue(){
+        this.q.shift()
+    }
+    front(){
+        this.q[0]
+    }
+    isEmpty(){
+        return !this.q.length > 0
+    }
+    displayQueue(){
+        console.log(this.q)
+    }
+}
+
+2-  instanceOf operator returns a boolean value which lets us know if a particular object
+    is created by a contructor. The contructor can be a Parent's Contructor as well, just because super() is while using inheritance.
+    SYNTAX => OBJECT instanceOf CONSTRUCTOR

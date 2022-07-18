@@ -1,0 +1,11 @@
+HACKERRANK SOLUTION FOR 'https://www.hackerrank.com/contests/javascript-week2/challenges/js-callbacks'
+
+
+function myFilter(my_array, callback){
+    return my_array.filter((ele) => callback(ele))
+}
+
+function processData(inputArray) {
+    //In blank write anonymous function, which takes one parameter and returns true if its even or false if its odd.
+    console.log(myFilter(inputArray, (num) => !(num%2) ));   
+} 

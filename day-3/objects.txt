@@ -1,0 +1,30 @@
+1-  const printProps = (obj)=>{
+        for(let key in obj){
+            console.log(key);
+        }
+        for(let val of Object.keys(obj)){
+            console.log(val);
+        }
+    }
+
+2-  delete x.a
+    delete x['a']
+
+3-  whenever we assign an object to a variable, the object isnt duplicated,
+    instead the new variable is just an other reference to the same object
+
+4-  Using spread operator => let y = {...x}
+    Using Object.assign() => let y = Object.assign({}, x)
+
+5-  Two variables if they refer to same object, then ofcourse they are equal, it can be checked by '===' operator
+    If two variables are cloned objects, then also they are equal, but arent considered true by '===' operator
+
+    const objectChecker = (obj1, obj2)=>{
+        Object.keys(obj2).length >= Object.keys(obj1).length && [obj1, obj2] = [obj2, obj1]
+        for(let key in obj1){
+            if(obj1[key] != obj2[key]){
+                return false;
+            }
+        }
+        return true;
+    }
