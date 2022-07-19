@@ -1,0 +1,10 @@
+1-  
+    async function getProcessedData(url) {
+        let v;
+        try {
+            v = await downloadData(url);
+        } catch (err) {
+            v = await downloadFallbackData(url);
+        }
+        return await processDataInWorker(v);
+    }

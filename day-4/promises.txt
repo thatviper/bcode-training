@@ -1,0 +1,27 @@
+1-  Promises are in any of the following state
+    a- Pending  : The promise is in a pending state i.e it is in progress
+    b- Resolved : The promise is fulfilled with a value i.e syntatically we use resolve(value) to indicate the resolve state
+    c- Rejected : The promise is in rejected state if there occured an error while a promise is in execution.
+
+2-  
+    const delayedLowerCase = (input) => {
+        return new Promise((resolve, reject) => {
+            typeof input !== "string" && reject("Check the type of your input");
+            setTimeout(() => resolve(input.toLowerCase()), 5000);
+        });
+    };
+    delayedLowerCase("BEAUTIFUL CODE")
+        .then((result) => console.log(result))
+        .catch((err) => console.log(err));
+
+3-  
+    const delayedLowerCase = (input) => {
+        return new Promise((resolve, reject) => {
+            typeof input !== "string" && reject("Check the type of your input");
+            setTimeout(() => resolve(input.toLowerCase()), 5000);
+        });
+    };
+    delayedLowerCase("BEAUTIFUL CODE")
+        .then((result) => result)
+        .then((result) => console.log(`${result} - ${result.length}`))
+        .catch((err) => console.log(err));
